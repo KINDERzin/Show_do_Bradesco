@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowDoBradesco.GamePage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White">
+
+        <Grid>
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Row="0"
+                       Grid.ColumnSpan="3"
+                       Source="tela_de_fundo.png"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                       Margin="0,25,0,0"/>
+
+
+                <Frame Grid.Row="1"
+                       Grid.ColumnSpan="2"
+                       BackgroundColor="Black"
+                       CornerRadius="10"
+                       HeightRequest="60"
+                       Margin="10,0">
+                        <Label Text="Pontuação"
+                               x:Name="labelPontuacao"
+                               TextColor="White"
+                               HorizontalOptions="Start"
+                               HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"
+                               Margin="10,0,5,0"/>
+                </Frame>
+
+
+                <Frame Grid.Row="1"
+                       Grid.Column="2"
+                       BackgroundColor="Black"
+                       CornerRadius="10"
+                       HeightRequest="60"
+                       Margin="10,0">
+                        <Label Text="Nível:"
+                               x:Name="labelNivel"
+                               TextColor="White"
+                               HorizontalOptions="Start"
+                               HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"
+                               Margin="10,0"/>
+                </Frame>
+
+
+                <Frame Grid.Row="2"
+                       Grid.ColumnSpan="3"
+                       BackgroundColor="Black"
+                       CornerRadius="10"
+                       HeightRequest="100"
+                       Margin="10,0,10,10">
+                        <Label Text="Pergunta"
+                               x:Name="labelPergunta"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center"
+                               VerticalOptions="CenterAndExpand"
+                               FontSize="20"
+                               Margin="10,0"/>
+                </Frame>
+
+
+                <Button Clicked="BtnResp01"
+                        Grid.Row="3"
+                        Grid.ColumnSpan="3"
+                        Text="Resposta 1"
+                        x:Name="Resposta01"
+                        BackgroundColor="#e5173f"
+                        TextColor="White"
+                        HeightRequest="70"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+
+                <Button Clicked="BtnResp02"
+                        Grid.Row="4"
+                        Grid.ColumnSpan="3"
+                        Text="Resposta 2"
+                        x:Name="Resposta02"
+                        BackgroundColor="#e5173f"
+                        TextColor="White"
+                        HeightRequest="70"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+
+                <Button Clicked="BtnResp03"
+                        Grid.Row="5"
+                        Grid.ColumnSpan="3"
+                        Text="Resposta 3"
+                        x:Name="Resposta03"
+                        BackgroundColor="#e5173f"
+                        TextColor="White"
+                        HeightRequest="70"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+
+                <Button Clicked="BtnResp04"
+                        Grid.Row="6"
+                        Grid.ColumnSpan="3"
+                        Text="Resposta 4"
+                        x:Name="Resposta04"
+                        BackgroundColor="#e5173f"
+                        TextColor="White"
+                        HeightRequest="70"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+
+                <Button Clicked="BtnResp05"
+                        Grid.Row="7"
+                        Grid.ColumnSpan="3"
+                        Text="Resposta 5"
+                        x:Name="Resposta05"
+                        BackgroundColor="#e5173f"
+                        TextColor="White"
+                        HeightRequest="70"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+
+                <Button Clicked="BtnCartas"
+                        Grid.Column="0"
+                        Grid.Row="8"
+                        Text="Cartas"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        HeightRequest="50"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+                <Button Clicked="BtnUniversitarios"
+                        Grid.Column="1"
+                        Grid.Row="8"
+                        Text="Universitários"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        HeightRequest="50"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+                <Button Clicked="BtnTiraum"
+                        Grid.Column="2"
+                        Grid.Row="8"
+                        Text="Tira Um"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        HeightRequest="50"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+        </Grid>
+</ContentPage>
